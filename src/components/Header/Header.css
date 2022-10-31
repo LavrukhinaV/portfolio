@@ -1,0 +1,36 @@
+.header {
+  padding: 32px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+}
+
+.header__link {
+  margin: 0;
+  margin-right: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161513;
+}
+
+.header__link:last-of-type {
+  margin-right: 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.change-lang {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #161513;
+  padding: 9px 26px;
+}

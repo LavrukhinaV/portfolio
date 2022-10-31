@@ -1,0 +1,97 @@
+.about-me {
+  color: #161513;
+  margin-top: 65px;
+  padding: 120px 160px;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 0 70px;
+  grid-template-areas:
+    "about-me info"
+    "about-me paragraphs"
+    "about-me table";
+}
+
+.about-me__container {
+  grid-area: about-me;
+}
+
+.about-me__name {
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.about-me__first-name {
+  margin: 0;
+  font-size: 23px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.about-me__first-name::after {
+  border-radius: 50%;
+  float: right;
+  background-color: #f3384d;
+  margin: 6px;
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.about-me__surname {
+  margin: 0;
+  font-size: 23px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.about-me__profession {
+  margin: 0;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 56px;
+}
+
+.about-me__info {
+  margin: 0;
+  padding-bottom: 36px;
+  grid-area: info;
+  font-size: 31px;
+  line-height: 40px;
+}
+
+.about-me__paragraph {
+  margin: 0;
+  padding-bottom: 27px;
+  grid-area: paragraphs;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.table {
+  grid-area: table;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.table__cell {
+  list-style: none;
+  margin-right: 90px;
+}
+
+.table__heading {
+  margin-top: 0;
+  margin-bottom: 9px;
+  color: #E94D35;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.table__text {
+  margin: 0;
+  font-size: 23px;
+  line-height: 32px;
+}

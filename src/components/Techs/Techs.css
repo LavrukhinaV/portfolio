@@ -1,0 +1,36 @@
+.technologies {
+  margin: 0;
+  margin-top: 60px;
+  padding: 0 10px;
+  background-color: #161513;
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  transform: skewY(-6deg);
+}
+
+.technologies__item {
+  list-style: none;
+}
+
+.technologies__title {
+  margin: 20px 60px 20px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.technologies__title:last-of-type {
+  margin-right: 0;
+}
+
+.technologies__title::after {
+  border-radius: 50%;
+  float: right;
+  background-color: #f3384d;
+  margin: 12px;
+  content: "";
+  position: relative;
+  width: 10px;
+  height: 10px;
+}

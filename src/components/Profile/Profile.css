@@ -1,0 +1,84 @@
+.profile {
+  padding: 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 2fr auto 1fr;
+  gap: 35px 67px;
+  grid-template-areas:
+  "name avatar"
+  "profession avatar"
+  "connection avatar";
+  align-items: center;
+  color: #161513;
+}
+
+.profile__name {
+  grid-area: name;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 64px;
+  margin: 0;
+  align-self: flex-end;
+}
+
+.profile__profession-container {
+  display: flex;
+  align-items: center;
+}
+
+.profile__profession {
+  grid-area: profession;
+  color: #161513;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.profile__profession::before {
+  border-radius: 50%;
+  float: left;
+  background-color: #f3384d;
+  margin: 6px;
+  content: "";
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.profile__connection {
+  grid-area: connection;
+  display: flex;
+  size: 16px;
+  line-height: 24px;
+  align-self: flex-start;
+}
+
+.profile__question {
+  border: 1px solid #161513;
+  background-color: #161513;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 13px 33px;
+}
+
+.profile__link {
+  margin: 0;
+  padding: 13px 33px;
+  border: 1px solid #161513;
+}
+
+.profile__avatar-container {
+  border-radius: 50%;
+  height: 562px;
+  margin-bottom: 0;
+  overflow: hidden;
+  width: 562px;
+  grid-area: avatar;
+}
+
+.profile__avatar {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
