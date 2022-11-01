@@ -1,7 +1,7 @@
-.about-me {
+.about {
   color: #161513;
-  margin-top: 65px;
-  padding: 120px 160px;
+  margin: 180px auto 60px;
+  max-width: 80%;
   display: grid;
   grid-template-columns: 350px 1fr;
   grid-template-rows: repeat(3, auto);
@@ -12,23 +12,23 @@
     "about-me table";
 }
 
-.about-me__container {
+.about__container {
   grid-area: about-me;
 }
 
-.about-me__name {
+.about__name {
   display: flex;
   margin-bottom: 21px;
 }
 
-.about-me__first-name {
+.about__first-name {
   margin: 0;
   font-size: 23px;
   line-height: 32px;
   font-weight: 400;
 }
 
-.about-me__first-name::after {
+.about__first-name::after {
   border-radius: 50%;
   float: right;
   background-color: #f3384d;
@@ -39,21 +39,27 @@
   height: 20px;
 }
 
-.about-me__surname {
+.about__surname {
   margin: 0;
   font-size: 23px;
   line-height: 32px;
   font-weight: 400;
 }
 
-.about-me__profession {
+.section_about {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about__profession {
   margin: 0;
   font-weight: 400;
   font-size: 44px;
   line-height: 56px;
 }
 
-.about-me__info {
+.about__info {
   margin: 0;
   padding-bottom: 36px;
   grid-area: info;
@@ -61,7 +67,7 @@
   line-height: 40px;
 }
 
-.about-me__paragraph {
+.about__paragraph {
   margin: 0;
   padding-bottom: 27px;
   grid-area: paragraphs;
@@ -94,4 +100,70 @@
   margin: 0;
   font-size: 23px;
   line-height: 32px;
+}
+
+@media screen and (max-width: 1184px) {
+  .about {
+    grid-template-columns: 290px 1fr;
+  }
+
+  .about__profession {
+    font-size: 31px;
+    line-height: 40px;
+  }
+
+  .about__info {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+
+
+@media screen and (max-width: 1023px) {
+  .about {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about__name {
+    flex-direction: column;
+  }
+
+  .about__first-name::after {
+    top: -30px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__container {
+    margin-bottom: 30px;
+  }
+
+  .about__name {
+    flex-direction: row;
+  }
+
+  .about__first-name::after {
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .about {
+    margin: 90px auto 60px;
+  }
+
+  .table__cell {
+    list-style: none;
+    margin-right: 45px;
+  }
+
+  .table__text {
+    font-size: 18px;
+    line-height: 32px;
+  }
 }

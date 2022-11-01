@@ -34,3 +34,36 @@
   width: 10px;
   height: 10px;
 }
+
+@media screen and (max-width: 695px) {
+  .technologies__title {
+    margin: 10px 40px 10px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .technologies__title::after {
+    margin: 8px;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .technologies {
+    flex-wrap: wrap;
+    justify-content: center
+  }
+  .technologies__title {
+    margin: 10px 40px 10px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .technologies__title::after {
+    font-size: 8px;
+    line-height: 12px;
+  }
+}
