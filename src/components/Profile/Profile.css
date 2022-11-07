@@ -148,6 +148,8 @@
   }
 
   .profile__name {
+    text-align: center;
+    align-self: center;
     margin-top: 34px;
   }
 

@@ -64,11 +64,15 @@
   align-items: center;
 }
 
+.change-lang_active {
+  border: 1px solid #161513;
+}
+
 .change-lang {
   margin: 0;
   font-size: 16px;
   line-height: 24px;
-  border: 1px solid #161513;
+
   padding: 9px 26px;
 }
 
@@ -99,6 +103,10 @@
     border: none;
     padding: 0;
     font-size: 12px;
+  }
+
+  .change-lang_active {
+    font-weight: 700;
   }
 
   .logo {

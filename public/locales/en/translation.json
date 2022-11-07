@@ -1,0 +1,60 @@
+{
+  "title": "Willkommen zu react und react-i18next",
+  "description": {
+    "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> und speichere um neuzuladen.",
+    "part2": "Wechsle die Sprache zwischen deutsch und englisch mit Hilfe der beiden Schalter."
+  },
+  "navLinks": {
+    "About": "About",
+    "Portfolio": "Portfolio",
+    "Contacts": "Contacts"
+  },
+  "profile": {
+    "name": "HI, I'M VIKTORIIA. BASED IN MOSCOW REGION",
+    "profession": "Front-end developer",
+    "question": "Got a project?",
+    "link": "Let's talk!"
+  },
+  "about": {
+    "first-name": "VIKTORIIA",
+    "surname": "LAVRUKHINA",
+    "profession": "Junior Front-end developer",
+    "info": "I'm a Frontend developer with 1 year of experience. I completed a web-development course at Practicum by Yandex.",
+    "paragraph": "I am open to suggestions and always happy to hear your opinion about my projects.",
+    "bornIn": "BORN IN",
+    "placeOfBirth": "Altay",
+    "experience": "EXPERIENCE",
+    "experienceTime": "1 Year",
+    "dateOfBirth": "DATE OF BIRTH",
+    "date": "19 January 1996"
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "link": "View project",
+    "portfolio": [
+      {
+        "title": "Movies Explorer",
+        "info": "Adaptive website where you can search movies and save them in your personal account."
+      },
+      {
+        "title": "Mesto",
+        "info": "Interactive page where users can add photos, delete and like them."
+      },
+      {
+        "title": "Travel project",
+        "info": "Responsive landing page about traveling in Russia."
+      },
+      {
+        "title": "How to learn",
+        "info": "Single page website describing effective approaches to learning."
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Contacts",
+    "question": "Want to know more or just chat?",
+    "welcome": "You are welcome!",
+    "button": "Send message"
+  },
+  "madeBy": "Made by Lavrukhina Viktoriia 2022"
+}

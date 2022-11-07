@@ -4,15 +4,20 @@ import telegramLogo from "../../images/logo-telegram.png";
 import instagramLogo from "../../images/logo-instagram.png";
 import emailLogo from "../../images/logo-email.png";
 
+import { useTranslation } from "react-i18next";
+
 function Contacts() {
+
+  const { t } = useTranslation();
+
   return (
     <section className="section section_contacts">
       <article className="contacts">
-        <h2 className="contacts__title">Contacts</h2>
-        <p className="contacts__subtitle">Want to know more or just chat?</p>
-        <p className="contacts__subtitle">You are welcome!</p>
+        <h2 className="contacts__title">{t("contacts.title")}</h2>
+        <p className="contacts__subtitle">{t("contacts.question")}</p>
+        <p className="contacts__subtitle">{t("contacts.welcome")}</p>
         <a className="contacts__link" href="https://t.me/lavrukhina96" target="blank">
-          <button className="contacts__button">Send message</button>
+          <button className="contacts__button">{t("contacts.button")}</button>
         </a>
         <nav className="contacts__links">
           <ul className="contacts__link-list">
