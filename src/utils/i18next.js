@@ -13,9 +13,9 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
   interpolation: {
     escapeValue: false
   },
-  backend: {
-    loadPath: '/portfolio/locales/{{lng}}/{{ns}}.json',
-  },
+  // backend: {
+  //   loadPath: '/portfolio/locales/{{lng}}/{{ns}}.json',
+  // },
 })
 
 export default i18n
