@@ -10,18 +10,15 @@ function Header() {
 
   const buttonEngClassName = () => {
     if (language === "en") {
-      return "change-lang change-lang_active"
-    } else return "change-lang"
+      return "header__button header__button_active"
+    } else return "header__button"
   }
 
   const buttonRuClassName = () => {
     if (language === "ru") {
-      return "change-lang change-lang_active"
-    } else return "change-lang"
+      return "header__button header__button_active"
+    } else return "header__button"
   }
-  
-
-  console.log("buttonClassName", buttonRuClassName())
 
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang)
@@ -53,12 +50,14 @@ function Header() {
       <div className="header__container">
         <img className="logo" src={logo} alt="Лого сайта"/>
         <nav>
-          <ul className="header_links" >
+          <ul className="header__links" >
             {navLinks.map(nav => renderNavLink(nav))}
           </ul>
         </nav>
-        <button id="en" className={buttonEngClassName()} onClick={() => changeLanguage('en')}>ENG</button>
-        <button id="ru" className={buttonRuClassName()} onClick={() => changeLanguage('ru')}>RU</button>
+        <ul className="header__buttons">
+          <button id="en" className={buttonEngClassName()} onClick={() => changeLanguage('en')}>ENG</button>
+          <button id="ru" className={buttonRuClassName()} onClick={() => changeLanguage('ru')}>RU</button>
+        </ul>
       </div>
     </header>
   )
