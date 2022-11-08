@@ -14,3 +14,5 @@
 
 * [https://lavrukhinav.github.io/portfolio/](https://lavrukhinav.github.io/portfolio/)
 
+### __Планы по доработке проекта:__
+1. Оптимизация изображений
