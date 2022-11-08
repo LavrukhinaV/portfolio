@@ -14,7 +14,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
     escapeValue: false
   },
   backend: {
-    loadPath: '/LavrukhinaV.portfolio.io/locales/{{lng}}/{{ns}}.json',
+    loadPath: '/portfolio/locales/{{lng}}/{{ns}}.json',
   },
 })
 
