@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.1d733e05.css",
-    "main.js": "/portfolio/static/js/main.957d490d.js",
+    "main.js": "/portfolio/static/js/main.9fa2de99.js",
     "static/media/project-movies-explorer.png": "/portfolio/static/media/project-movies-explorer.b0979af98f29d2ded82a.png",
     "static/media/project-mesto.png": "/portfolio/static/media/project-mesto.77dad776f3525f4e6f86.png",
     "static/media/project-about-travel.png": "/portfolio/static/media/project-about-travel.411d804dab011c88177e.png",
@@ -20,10 +20,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/getFetch.cjs": "/portfolio/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.1d733e05.css.map": "/portfolio/static/css/main.1d733e05.css.map",
-    "main.957d490d.js.map": "/portfolio/static/js/main.957d490d.js.map"
+    "main.9fa2de99.js.map": "/portfolio/static/js/main.9fa2de99.js.map"
   },
   "entrypoints": [
     "static/css/main.1d733e05.css",
-    "static/js/main.957d490d.js"
+    "static/js/main.9fa2de99.js"
   ]
 }
