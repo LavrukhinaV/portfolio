@@ -1,0 +1,64 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+
+.technologies {
+  margin-top: 60px;
+  padding: 0 10px;
+  background-color: $black;
+  display: flex;
+  justify-content: space-between;
+  color: $white;
+  transform: skewY(-6deg);
+
+  @include mobile-medium {
+    flex-wrap: wrap;
+    justify-content: center
+  }
+}
+
+.title {
+  margin: 20px 60px 20px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &::after {
+    border-radius: 50%;
+    float: right;
+    background-color: $red;
+    margin: 12px;
+    content: "";
+    position: relative;
+    width: 10px;
+    height: 10px;
+  }
+
+  @include screen_680 {
+    margin: 10px 40px 10px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    &::after {
+      margin: 8px;
+      width: 6px;
+      height: 6px;
+    }
+  }
+
+  @include mobile-medium {
+    margin: 10px 40px 10px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+
+    &::after {
+      font-size: 8px;
+      line-height: 12px;
+    }
+  }
+}

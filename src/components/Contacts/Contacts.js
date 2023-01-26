@@ -1,46 +1,29 @@
-import './Contacts.css'
-import gitHubLogo from "../../images/logo-github.png";
-import telegramLogo from "../../images/logo-telegram.png";
-import instagramLogo from "../../images/logo-instagram.png";
-import emailLogo from "../../images/logo-email.png";
-
+import styles from './Contacts.module.scss'
 import { useTranslation } from "react-i18next";
+import { SOCIAL_NETWORKS } from '../../constant/constant';
 
 function Contacts() {
 
   const { t } = useTranslation();
 
   return (
-    <section className="section section_contacts">
-      <article className="contacts">
-        <h2 className="contacts__title">{t("contacts.title")}</h2>
-        <p className="contacts__subtitle">{t("contacts.question")}</p>
-        <p className="contacts__subtitle">{t("contacts.welcome")}</p>
-        <a className="contacts__link" href="https://t.me/lavrukhina96" target="blank">
-          <button className="contacts__button">{t("contacts.button")}</button>
+    <section className={styles['section-contacts']} id='contacts'>
+      <article className={styles.contacts}>
+        <h2 className={styles.title}>{t("contacts.title")}</h2>
+        <p className={styles.subtitle}>{t("contacts.question")}</p>
+        <p className={styles.subtitle}>{t("contacts.welcome")}</p>
+        <a className={styles.link} href="https://t.me/lavrukhina96" target="blank">
+          <button className={styles.button}>{t("contacts.button")}</button>
         </a>
-        <nav className="contacts__links">
-          <ul className="contacts__link-list">
-            <li className="contacts__link-item">
-              <a className="contacts__social-network" href="mailto:tomenko_viktoriya@mail.ru" target="blank">
-                <img className="contacts__link-logo" alt="Instagram" src={emailLogo}/>
+        <nav>
+          <ul className={styles.links}>
+            {SOCIAL_NETWORKS.map((item, index) => 
+             <li className={styles.socialNetwork} key={index}>
+              <a href={item.link} target="blank">
+                <img alt={item.name} src={item.image}/>
               </a>
             </li>
-            <li className="contacts__link-item">
-              <a className="contacts__social-network" href="https://github.com/LavrukhinaV" target="blank">
-                <img className="contacts__link-logo" alt="Instagram" src={gitHubLogo}/>
-              </a>
-            </li>
-            <li className="contacts__link-item">
-              <a className="contacts__social-network" href="https://t.me/lavrukhina96" target="blank" rel="noreferrer">
-                <img className="contacts__link-logo" alt ="Telegram" src={telegramLogo}/>
-              </a>
-            </li>
-            <li className="contacts__link-item">
-              <a className="contacts__social-network" href="https://instagram.com/viikula" target="blank">
-                <img className="contacts__link-logo" alt="Instagram" src={instagramLogo}/>
-              </a>
-            </li>
+            )}
           </ul>
         </nav>
       </article>

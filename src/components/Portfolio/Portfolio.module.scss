@@ -1,0 +1,177 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+
+.section-portfolio {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px;
+
+  @include tablet {
+    padding: 80px;
+  }
+
+  @include mobile-medium {
+    padding: 40px;
+  }
+
+  @include mobile-small {
+    padding: 40px 0 40px;
+  }
+}
+
+.title {
+  color: $black;
+  margin-bottom: 60px;
+  font-size: 45px;
+  line-height: 56px;
+  font-weight: 400;
+
+  &::before {
+    border-radius: 50%;
+    float: right;
+    background-color: $red;
+    top: -20px;
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+
+  @include screen_890 {
+    margin-bottom: 38px;
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+.element {
+  display: grid;
+  margin-bottom: 96px;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "photo title"
+  "photo subtitle"
+  "photo link";
+  gap: 0 44px;
+  justify-items: start;
+  align-items: start;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:nth-of-type(2n) {
+    grid-template-areas: 
+    "title photo"
+    "subtitle photo"
+    "link photo";
+  }
+
+  @include screen_890 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.projectLink {
+  grid-area: photo;
+  align-self: center;
+}
+
+.image {
+  width: 460px;
+  object-fit: cover;
+
+  @include screen_1184 {
+    width: 360px;
+  }
+
+  @include screen_890 {
+    width: 100%;
+  }
+}
+
+.projectTitle {
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: $orange;
+  color: #FFFFFF;
+  padding: 3px 12px;
+  grid-area: title;
+
+  @include screen_890 {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 32px;
+    background: none;
+    color: $orange;
+  }
+}
+
+.info {
+  font-size: 36px;
+  line-height: 44px;
+  color: $black;
+  grid-area: subtitle;
+
+  @include screen_1184 {
+    font-size: 31px;
+    line-height: 40px;
+  }
+
+  @include screen_890 {
+    font-size: 23px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  @include mobile-small {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.link {
+  font-size: 20px;
+  line-height: 32px;
+  color: $black;
+  grid-area: link;
+  margin-top: 49px;
+
+  &::before {
+    @include screen_890 {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: $black;
+      left: 0;
+      bottom: -2px;
+    }
+  }
+
+  @include screen_890 {
+    align-self: baseline;
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 32px;
+    position: relative;
+  }
+
+  @include mobile-small {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}

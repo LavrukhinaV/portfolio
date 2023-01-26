@@ -1,0 +1,161 @@
+@import "./src/assets/styles/colors";
+@import "./src/assets/styles/breakpoints";
+
+.section-about {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  scroll-margin-top: 138px;
+
+  @include tablet {
+    scroll-margin-top: 98px;
+  }
+
+  @include mobile-medium {
+    scroll-margin-top: 58px;
+  }
+}
+
+.about {
+  color: $black;
+  margin: 180px auto 60px;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: repeat(3, auto);
+  gap: 0 70px;
+  grid-template-areas:
+    "about-me info"
+    "about-me paragraphs"
+    "about-me table";
+
+  @include screen_1184 {
+    grid-template-columns: 290px 1fr;
+  }
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include screen_890 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include mobile-medium {
+    margin: 90px auto 60px;
+  }
+}
+
+.container {
+  grid-area: about-me;
+
+  @include screen_890 {
+    margin-bottom: 30px;
+  }
+}
+
+.name {
+  display: flex;
+  margin-bottom: 21px;
+
+  @include tablet {
+    flex-direction: column;
+  }
+
+  @include screen_890 {
+    flex-direction: row;
+  }
+}
+
+.firstName {
+  font-size: 23px;
+  line-height: 32px;
+  font-weight: 400;
+
+  &::after {
+    border-radius: 50%;
+    float: right;
+    background-color: $red;
+    margin: 6px;
+    content: "";
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+    @include tablet {
+      top: -30px;
+    }
+
+    @include screen_890 {
+      top: 0;
+    }
+  }
+}
+
+.surname {
+  font-size: 23px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.profession {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 56px;
+
+  @include screen_1184 {
+    font-size: 31px;
+    line-height: 40px;
+  }
+}
+
+.info {
+  padding-bottom: 36px;
+  grid-area: info;
+  font-size: 31px;
+  line-height: 40px;
+
+  @include screen_1184 {
+    font-size: 23px;
+    line-height: 32px;
+  }
+}
+
+.paragraph {
+  padding-bottom: 27px;
+  grid-area: paragraphs;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.table {
+  grid-area: table;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cell {
+  margin-right: 90px;
+
+  @include mobile-medium {
+    margin-right: 45px;
+  }
+}
+
+.heading {
+  margin-bottom: 9px;
+  color: $orange;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.text {
+  font-size: 23px;
+  line-height: 32px;
+
+  @include mobile-medium {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}

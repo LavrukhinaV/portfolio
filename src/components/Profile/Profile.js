@@ -1,5 +1,5 @@
-import './Profile.css'
-import avatar from '../../images/avatar.JPG';
+import styles from'./Profile.module.scss'
+import avatar from '../../assets/images/avatar.JPG';
 
 import { useTranslation } from "react-i18next";
 
@@ -8,16 +8,16 @@ function Profile() {
   const { t } = useTranslation();
 
   return (
-    <section className="section section_profile">
-      <article className="profile">
-        <div className="profile__avatar-container">
-          <img className="profile__avatar" alt="avatar" src={avatar}/>
+    <section className={styles.section}>
+      <article className={styles.profile}>
+        <div className={styles.container}>
+          <img className={styles.avatar} alt="avatar" src={avatar}/>
         </div>
-        <h1 className="profile__name">{t("profile.name")}</h1>
-        <h2 className="profile__profession">{t("profile.profession")}</h2>
-        <a className="profile__connection" href="https://t.me/lavrukhina96" target="blank">
-          <p className="profile__question">{t("profile.question")}</p>
-          <p className="profile__link">{t("profile.link")}</p>
+        <h1 className={styles.name}>{t("profile.name")}</h1>
+        <h2 className={styles.profession}>{t("profile.profession")}</h2>
+        <a className={styles.connection} href="https://t.me/lavrukhina96" target="blank">
+          <p className={styles.question}>{t("profile.question")}</p>
+          <p className={styles.link}>{t("profile.link")}</p>
         </a>
       </article>
     </section>

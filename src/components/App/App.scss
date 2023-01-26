@@ -1,3 +1,5 @@
+$app-background-colour: #F5F5F5;
+
 .page {
   font-family: 'Inter', Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -8,6 +10,26 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #F5F5F5;;
+  background-color: $app-background-colour;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
 }
